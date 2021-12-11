@@ -23,7 +23,7 @@ const MongoStore = require('connect-mongodb-session')(session);
 
 const app = express();
 
-const port =8000;
+const port = process.env.PORT || 8000;
 
 //get data from cookie
 app.use(cookieParser());
