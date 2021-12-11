@@ -8,9 +8,9 @@ const env = require('../secret/environment');
 
 
 passport.use(new GoogleStrategy({
-    clientID: env.googleClientID,
-    clientSecret: env.googleClientSecret,
-    callbackURL: env.googleCallBackUrl,
+    clientID: process.env.googleClientID,
+    clientSecret: process.env.googleClientSecret,
+    callbackURL: process.env.googleCallBackUrl,
     //use ones own secret key instead
 },
     function (accessToken, refreshToken, profile, done) {

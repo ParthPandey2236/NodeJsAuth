@@ -7,7 +7,7 @@ const env = require('../secret/environment');
 module.exports.sendMail = async function (email) {
     console.log('nodemailer Info File Called');
     await nodeMailerConfig.transporter.sendMail({
-        from: env.email,
+        from: process.env.email,
         to: email,
         subject: "Login to NodeJsAuth",
         html: `<p>Your account ${email} was just logged into the project.</p>`
