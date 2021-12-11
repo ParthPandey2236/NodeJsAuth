@@ -5,4 +5,4 @@
  <h3>d) Replace the Welcome.ejs file in Views with the ejs file user wants to have after authentication.</h3>
  <h3>e) Similarly change the file to be rendered in welcome in controller as well as  in router.</h3>
 <h3>After all these steps one can easily set up the project.</h3>
-<h4>Thankyou</h4>
+<h2>Thankyou</h2>
